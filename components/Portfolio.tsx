@@ -366,10 +366,10 @@ export default function Portfolio() {
           <div style={{ position: "relative", width: 300, height: 300, display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div style={{ position: "absolute", inset: -20, background: "radial-gradient(circle,rgba(0,212,212,.35) 0%,transparent 65%)", animation: "hexPulse 3s ease-in-out infinite" }} />
             <HexFrame>
-              <Image
-                src="https://i.ibb.co/ycvCqgNG/image.png"
+              <img
+                src="/images/brian.jpg"
                 alt="Brian Machayo"
-                style={{ width:"100%", height:"100%", objectFit:"cover" }}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </HexFrame>
           </div>
@@ -381,10 +381,10 @@ export default function Portfolio() {
         <div style={{ position: "relative", flexShrink: 0 }}>
           <div style={{ position: "absolute", inset: -16, background: "radial-gradient(circle,rgba(0,212,212,.25) 0%,transparent 65%)" }} />
           <HexFrame size={240}>
-            <Image
-              src="https://i.ibb.co/ycvCqgNG/image.png"
+            <img
+              src="/images/brian.jpg"
               alt="Brian Machayo"
-              style={{ width:"100%", height:"100%", objectFit:"cover" }}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </HexFrame>
         </div>
