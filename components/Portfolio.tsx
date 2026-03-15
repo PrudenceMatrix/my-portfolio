@@ -233,24 +233,6 @@ function HexFrame({ size = 260, children }: { size?: number; children: ReactNode
   );
 }
 
-// ─────────────────────────────────────────────────────────────
-//  PHOTO PLACEHOLDER - DONE
-//  ──────────────────────────────────────────────────────────
-//  HOW TO ADD YOUR PHOTO:
-//  1. Go to https://imgbb.com → upload your photo
-//  2. Copy the "Direct link" (ends in .jpg / .png)
-//  3. Replace <PhotoPlaceholder /> (appears TWICE below)
-//     with this JSX:
-//
-//  <Image
-//    src="https://i.ibb.co/1J4P8mDR/image.png"
-//    alt="Brian Machayo"
-//    style={{ width:"100%", height:"100%", objectFit:"cover" }}
-//  />
-// ─────────────────────────────────────────────────────────────
-// ─────────────────────────────────────────────────────────────
-//  SHARED BUTTON STYLES
-// ─────────────────────────────────────────────────────────────
 const btnOutline: React.CSSProperties = {
   display: "inline-flex", alignItems: "center", gap: 8,
   border: `2px solid ${C.cyan}`, color: C.cyan,
@@ -383,20 +365,9 @@ export default function Portfolio() {
         <div className="hero-right" style={{ flex: "0 0 340px", display: "flex", justifyContent: "center", alignItems: "center", position: "relative", zIndex: 2 }}>
           <div style={{ position: "relative", width: 300, height: 300, display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div style={{ position: "absolute", inset: -20, background: "radial-gradient(circle,rgba(0,212,212,.35) 0%,transparent 65%)", animation: "hexPulse 3s ease-in-out infinite" }} />
-            <HexFrame size={260}>
-              {/*
-               * ══════════════════════════════════════════════
-               * PHOTO ADDED — using Next.js Image component:
-               *
-               * <Image
-               *   src="https://i.ibb.co/1J4P8mDR/image.png"
-               *   alt="Brian Machayo"
-               *   style={{ width:"100%", height:"100%", objectFit:"cover" }}
-               * />
-               * ══════════════════════════════════════════════
-               */}
+            <HexFrame>
               <Image
-                src="https://i.ibb.co/1J4P8mDR/image.png"
+                src="https://i.ibb.co/ycvCqgNG/image.png"
                 alt="Brian Machayo"
                 style={{ width:"100%", height:"100%", objectFit:"cover" }}
               />
@@ -410,9 +381,8 @@ export default function Portfolio() {
         <div style={{ position: "relative", flexShrink: 0 }}>
           <div style={{ position: "absolute", inset: -16, background: "radial-gradient(circle,rgba(0,212,212,.25) 0%,transparent 65%)" }} />
           <HexFrame size={240}>
-            {/* Photo added — same Image component as hero above */}
             <Image
-              src="https://i.ibb.co/1J4P8mDR/image.png"
+              src="https://i.ibb.co/ycvCqgNG/image.png"
               alt="Brian Machayo"
               style={{ width:"100%", height:"100%", objectFit:"cover" }}
             />
@@ -424,7 +394,7 @@ export default function Portfolio() {
           </h2>
           <p style={{ fontSize: 16, fontWeight: 500, color: C.cyan, marginBottom: 16 }}>Systems &amp; Security Engineer</p>
           <p style={{ fontSize: 14, color: "#999", lineHeight: 1.85, marginBottom: 16 }}>
-            Computer Science undergraduate (Year 2, Semester 2) based in Kisii, Kenya. Operating across
+            Applied Computer Science undergraduate based in Kisii, Kenya. Operating across
             three primary stacks — Java systems architecture, Python security tooling, and modern TypeScript
             web infrastructure — with one unified narrative: rigorous systems and security engineering.
           </p>
@@ -513,7 +483,7 @@ export default function Portfolio() {
               />
             ))}
             <textarea
-              placeholder="Your Message"
+              placeholder="Submitt Your Idea Message"
               style={{ background: "rgba(255,255,255,.04)", border: "1px solid rgba(255,255,255,.1)", borderRadius: 6, padding: "14px 18px", fontFamily: "'Poppins',sans-serif", fontSize: 13, color: C.white, gridColumn: "1 / -1", resize: "vertical", minHeight: 130 }}
             />
             <button
